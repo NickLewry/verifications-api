@@ -1,0 +1,13 @@
+{
+  "name": "default",
+  "type": "verify_address",
+  "geo": "uk",
+  "source": "geo_specific",
+  "available_methods": [
+    {
+      "name": "manual_input",
+      "provider": "internal",
+      "order": 1
+    }
+  ]
+}

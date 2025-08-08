@@ -1,0 +1,32 @@
+{
+  "journey_name": "default",
+  "journey_version": "2025-07-24",
+  "journey_type": "ach_uplift",
+  "entity": "company",
+  "geo": "uk",
+  "description": "Allows the merchant to collect and get paid out in USD",
+  "required_steps": [
+    {
+      "type": "verify_identity",
+      "order": 1,
+      "config_type": "default"
+    },
+    {
+      "type": "verify_address",
+      "order": 2,
+      "config_type": "default"
+    },
+    {
+      "type": "verify_bank_account",
+      "order": 3,
+      "config_type": "default"
+    },
+    {
+      "type": "verify_company_ownership",
+      "order": 4,
+      "config_type": "default"
+    }
+  ]
+}
+
+

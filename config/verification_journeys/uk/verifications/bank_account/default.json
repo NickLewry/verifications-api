@@ -1,0 +1,25 @@
+{
+  "name": "default",
+  "type": "verify_bank_account",
+  "geo": "uk",
+  "source": "geo_specific",
+  "available_methods": [
+    {
+      "name": "ais",
+      "type": "",
+      "provider": "gocardless",
+      "order": 1
+    },
+    {
+      "name": "penny_test",
+      "provider": "gocardless",
+      "order": 2
+    },
+    {
+      "name": "manual_upload",
+      "provider": "gocardless",
+      "order": 3,
+      "supported_documents": ["bank_statement"]
+    }
+  ]
+}

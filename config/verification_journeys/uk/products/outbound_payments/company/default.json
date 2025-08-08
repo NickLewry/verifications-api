@@ -1,0 +1,27 @@
+{
+  "name": "default",
+  "version": "2025-07-24",
+  "type": "outbound_payments",
+  "entity": "company",
+  "geo": "uk",
+  "required_steps": [
+    {
+      "type": "verify_identity",
+      "order": 1,
+      "config_type": "default",
+      "required": true
+    },
+    {
+      "type": "verify_address",
+      "order": 2,
+      "config_type": "default",
+      "required": true
+    },
+    {
+      "type": "verify_bank_account",
+      "order": 3,
+      "config_type": "default",
+      "required": true
+    }
+  ]
+}

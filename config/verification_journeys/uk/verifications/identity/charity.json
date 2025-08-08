@@ -1,0 +1,14 @@
+{
+  "name": "charity",
+  "type": "verify_identity",
+  "source": "segregation_entity",
+  "geo": "uk",
+  "available_methods": [
+    {
+      "name": "manual_upload",
+      "provider": "internal",
+      "order": 1,
+      "supported_documents": ["passport"]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "default",
+  "type": "verify_identity",
+  "source": "segregation_entity",
+  "geo": "uk",
+  "available_methods": [
+    {
+      "name": "document_upload",
+      "type": "third_party",
+      "provider": "onfido",
+      "order": 1
+    },
+    {
+      "name": "manual",
+      "type":"document_upload",
+      "provider": "internal",
+      "order": 2,
+      "supported_documents": ["passport", "drivers_license"]
+    }
+  ]
+}

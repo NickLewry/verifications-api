@@ -1,0 +1,50 @@
+{
+  "name": "default",
+  "type": "verify_company_ownership",
+  "geo": "uk",
+  "source": "segregation_entity",
+  "available_methods": [
+    {
+      "name": "manual_input",
+      "provider": "internal",
+      "order": 1,
+      "required_data": [
+        {
+          "field_id": "beneficial_owner_name",
+          "label": "Beneficial Owner Full Name",
+          "description": "Legal name of the person who owns 25% or more of the company",
+          "type": "string",
+          "required": true,
+          "validation": {
+            "min_length": 2,
+            "max_length": 100
+          },
+          "order": 1
+        },
+        {
+          "field_id": "ownership_percentage",
+          "label": "Ownership Percentage",
+          "description": "Percentage of company owned by this person",
+          "type": "number",
+          "required": true,
+          "validation": {
+            "min": 0,
+            "max": 100
+          },
+          "order": 2
+        },
+        {
+          "field_id": "date_of_birth",
+          "label": "Date of Birth",
+          "description": "Beneficial owner's date of birth",
+          "type": "date",
+          "required": true,
+          "validation": {
+            "min_age": 18
+          },
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

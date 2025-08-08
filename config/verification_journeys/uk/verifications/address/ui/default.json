@@ -1,0 +1,36 @@
+{
+  "name": "default",
+  "type": "verify_address",
+  "geo": "uk",
+  "ui_fields": [
+    {
+      "field": "address_line_1",
+      "component": "text_input",
+      "label": "Address Line 1",
+      "placeholder": "Enter your street address",
+      "help_text": "Include building number and street name",
+      "validations": {
+        "min_length": 5
+      },
+      "order": 1
+    },
+    {
+      "field": "address_line_2",
+      "component": "text_input",
+      "label": "Address Line 2",
+      "placeholder": "Enter your street address",
+      "help_text": "Include building number and street name",
+      "validations": {
+        "min_length": 5
+      },
+      "order": 2
+    },
+    {
+      "field": "city",
+      "component": "text_input",
+      "label": "City",
+      "placeholder": "Enter your city",
+      "order": 3
+    }
+  ]
+}

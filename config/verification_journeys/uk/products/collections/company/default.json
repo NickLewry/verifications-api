@@ -1,0 +1,35 @@
+{
+  "journey_name": "default",
+  "journey_version": "2025-07-24",
+  "journey_type": "collections",
+  "entity": "company",
+  "geo": "uk",
+  "required_steps": [
+    {
+      "type": "verify_identity",
+      "order": 1,
+      "config_type": "default",
+      "required": true
+    },
+    {
+      "type": "verify_address",
+      "order": 2,
+      "config_type": "default",
+      "required": true
+    },
+    {
+      "type": "verify_bank_account",
+      "order": 3,
+      "config_type": "default",
+      "required": true
+    },
+    {
+      "type": "additional_information_required",
+      "order": 4,
+      "config_type": "default",
+      "required": false
+    }
+  ]
+}
+
+
